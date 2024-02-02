@@ -6,6 +6,7 @@ import {
 import Home from "../Home/Home";
 import Main from "../Layout/Main";
 import Contact from "../Pages/Contact/Contact";
+import About from "../Pages/About/About";
 
 
 
@@ -25,6 +26,11 @@ export const router = createBrowserRouter([
                     path: '/contact',
                     element: <Contact></Contact>
                 },
+              
+                {
+                    path: 'about',
+                    element: <About></About>
+                }
               
             
            
