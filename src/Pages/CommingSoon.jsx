@@ -7,10 +7,25 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaSkype } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import Counting from './Counting';
+import Swal from 'sweetalert2';
 
 const CommingSoon = () => {
+
+const handleAlert = () =>{
+  Swal.fire({
+    position: "top",
+    width: "350px",
+    icon: "success",
+    title: "Notify Successful",
+    showConfirmButton: false,
+    timer: 1500
+  });
+}
+
+
     return (
-        <div className='tour text-center h-[700px] relative'>
+        <div className='tour text-center h-[800px] relative'>
 
 
 
@@ -27,7 +42,9 @@ const CommingSoon = () => {
 
    <div className='pt-[80px] px-4'>
 
-<div className='flex text-white justify-center gap-8 text-4xl mb-8'>
+<Counting></Counting>
+
+{/* <div className='flex text-white justify-center gap-8 text-4xl mb-8'>
 <div>000
 <br /> 
 <p className='text-sm'>Days</p>
@@ -45,7 +62,7 @@ const CommingSoon = () => {
 <br /> 
 <p className='text-sm'>Sec</p>
 </div>
-</div>
+</div> */}
 
 
    <p className='text-3xl font-semibold font-serif text-white'> BEFORE LAUNCHING OUR <br />
@@ -55,13 +72,13 @@ const CommingSoon = () => {
 <p className='mt-6 text-white'>We're coming soon! Awesome template to present your future product or service. <br />
 We're working hard to give you the best experience!</p>
 
-<div className='mt-6 flex justify-center gap-8'>
-  <button className='btn  bg-blue-500 text-white w-32 hover:bg-inherit'> NOTIFY ME</button>
-  <button className='btn w-32  hover:bg-inherit'> MORE INFO</button>
+<div className='mt-10 flex justify-center gap-8'>
+  <button onClick={handleAlert} className='btn  bg-blue-500 text-white w-32 hover:bg-inherit'> NOTIFY ME</button>
+  <button className='btn w-32  hover:bg-inherit hover:text-white'> MORE INFO</button>
 </div>
 
 <div className='flex justify-center mt-12 text-white text-2xl gap-4'>
-<FaFacebook />  <FaInstagramSquare /> <FaWhatsappSquare /> <FaTwitter /><FaSkype />
+<FaFacebook className='hover:text-blue-400 ' />  <FaInstagramSquare className='hover:text-blue-400 ' /> <FaWhatsappSquare className='hover:text-blue-400 ' /> <FaTwitter className='hover:text-blue-400 ' /><FaSkype  className='hover:text-blue-400 '/>
 </div>
 
    </div>
