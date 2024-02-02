@@ -29,7 +29,7 @@ const CountdownTimer = ({ targetDate }) => {
   }
 
   return (
-    <div className='grid lg:grid-cols-4 gap-4  container mx-auto    justify-center items-center  text-3xl mb-8 px-32 text-gray-700 font-semibold'>
+    <div className='grid lg:grid-cols-4 gap-4  container mx-auto    justify-center items-center  text-3xl mb-8 px-32 text-white font-bold'>
     <p className=''>Days: {timeLeft.days}</p>
     <p className=''>Hours: {timeLeft.hours}</p>
     <p className=''>Minutes: {timeLeft.minutes}</p>

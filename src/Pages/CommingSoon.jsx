@@ -40,7 +40,7 @@ const handleAlert = () =>{
  <button className=' btn outline-none mt-2 bg-blue-500 text-white border-none hover:bg-transparent'> <Link to='/contact'>Contact Us</Link> </button>
  </div>
 
-   <div className='pt-[80px] px-4'>
+   <div className='pt-[45px] px-4'>
 
 <Counting></Counting>
 
