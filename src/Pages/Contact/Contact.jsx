@@ -25,7 +25,7 @@ const handleSuccess=()=>{
      Please stay update and follow
      </p>
 
-     <div className='flex justify-center items-center h-screen -mt-36'>
+     <div className='flex justify-center items-center h-screen '>
   <div className=''>
     <input type="text" placeholder="Name" className="mt-4 input input-bordered border-black w-[300px] max-w-xs" /> <br />
     <input type="text" placeholder="Email" className="mt-4 input input-bordered border-black w-[300px] max-w-xs" /> <br />
