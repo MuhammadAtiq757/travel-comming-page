@@ -16,7 +16,7 @@ const handleSuccess=()=>{
 }
 
     return (
-        <div className='container mx-auto pt-[60px] meet'>
+        <div className=' mx-auto pt-[60px] meet'>
             
     <div className=''>
      <h1 className='text-center font-semibold text-2xl text-white font-serif'>CONTACT US</h1>
